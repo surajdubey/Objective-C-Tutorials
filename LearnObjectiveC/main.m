@@ -12,26 +12,32 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-        NSDate *date = [[NSDate alloc] init];
-        NSArray *myArray = [[NSArray alloc] initWithObjects:@"One", @"two", @"Three", date, nil];
+        NSDictionary *states = [[NSDictionary alloc]
+                                initWithObjectsAndKeys:@"Arizona", @"AZ",
+                                @"California", @"CA",
+                                @"Howaii", @"HI",
+                                nil];
         
-        NSLog(@"At index 2 %@", [myArray objectAtIndex:2]);
-        NSLog(@"At index 1 %@", myArray[1]);
+        NSString *someState = @"AZ";
+        NSLog(@"%@ is for %@", someState, [states objectForKey:someState]);
         
-        NSMutableArray *myMutableArray = [[NSMutableArray alloc] initWithObjects:@"One", @"two", @"Three", date, nil];
+        //short hand
+        NSLog(@"%@ is for %@", someState, states[someState]);
         
-        NSLog(@"At index 1 %@", myMutableArray[1]);
+        NSMutableDictionary *statesMutable = [[NSMutableDictionary alloc]
+                                initWithObjectsAndKeys:@"Arizona", @"AZ",
+                                @"California", @"CA",
+                                @"Howaii", @"HI",
+                                nil];
         
-        NSString *anotherString = @"New String";
-        [myMutableArray addObject:anotherString];
+        //only with mutable
+        [statesMutable setObject:@"Florida" forKey:@"FL"];
         
-        NSLog(@"At index 5 %@", myMutableArray[4]);
+        //short hand
+        NSLog(@"%@ is for %@", someState, statesMutable[@"FL"]);
         
-        [myMutableArray removeObjectAtIndex:4];
-        
-        //readable and short
-        //does not work with mutable array
-        NSArray *shartHandArray = @[@"One", @"Two", date];
+        //short for definition
+        //NSDictionary *quicker = @{key1 : object1, key2: object2};
         
     }
     return 0;

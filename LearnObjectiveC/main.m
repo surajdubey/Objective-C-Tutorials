@@ -7,19 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MathUtility.h"
+#import "Player.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-        MathUtility *util = [[MathUtility alloc] init];
-        
-        int result = [util timesTen:55];
-        NSLog(@"Result of timesTen is: %i", result);
-        
-        int additionResult = [util addNumber:10 toNumber:50];
-        NSLog(@"Result of addition is: %i", additionResult);
-        
+        Player *player = [[Player alloc] init];
+        NSLog(@"Score is %i", [player score]);
     }
     return 0;
 }

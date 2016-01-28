@@ -12,11 +12,11 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-        Player *player = [[Player alloc] init];
-        NSLog(@"Score is %i", [player score]);
+        int multipleValues[] = {10,100,1,1,4};
+        NSLog(@"%i", multipleValues[2]);
         
-        Player *secondPlayer = [[Player alloc] initWithInteger:7000];
-        NSLog(@"Second Player Score is %i", [secondPlayer score]);
+        NSString *myStringArray[] = {@"First", @"Second"};
+        NSLog(@"%@", myStringArray[1]);
     }
     return 0;
 }

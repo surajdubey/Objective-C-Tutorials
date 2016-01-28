@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		38A2EF9E1C59F7B300C76552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A2EF9D1C59F7B300C76552 /* main.m */; };
 		38A2EFA61C59F7C700C76552 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A2EFA51C59F7C700C76552 /* Employee.m */; settings = {ASSET_TAGS = (); }; };
+		38A2EFA91C59FE4E00C76552 /* MathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A2EFA81C59FE4E00C76552 /* MathUtility.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		38A2EF9D1C59F7B300C76552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38A2EFA41C59F7C700C76552 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		38A2EFA51C59F7C700C76552 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		38A2EFA71C59FE4E00C76552 /* MathUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtility.h; sourceTree = "<group>"; };
+		38A2EFA81C59FE4E00C76552 /* MathUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				38A2EF9D1C59F7B300C76552 /* main.m */,
 				38A2EFA41C59F7C700C76552 /* Employee.h */,
+				38A2EFA71C59FE4E00C76552 /* MathUtility.h */,
+				38A2EFA81C59FE4E00C76552 /* MathUtility.m */,
 				38A2EFA51C59F7C700C76552 /* Employee.m */,
 			);
 			path = LearnObjectiveC;
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A2EFA91C59FE4E00C76552 /* MathUtility.m in Sources */,
 				38A2EF9E1C59F7B300C76552 /* main.m in Sources */,
 				38A2EFA61C59F7C700C76552 /* Employee.m in Sources */,
 			);

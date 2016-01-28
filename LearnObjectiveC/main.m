@@ -7,18 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Employee.h"
+#import "MathUtility.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-        //insert code
-        Employee *fred = [[Employee alloc] init];
-        [fred someMethod];
+        MathUtility *util = [[MathUtility alloc] init];
         
-        //change property
-        [fred setEmployeeNumber:5];
-        [fred setName:@"Name"];
+        int result = [util timesTen:55];
+        NSLog(@"Result of timesTen is: %i", result);
+        
+        int additionResult = [util addNumber:10 toNumber:50];
+        NSLog(@"Result of addition is: %i", additionResult);
         
     }
     return 0;

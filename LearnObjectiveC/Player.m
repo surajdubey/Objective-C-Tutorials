@@ -12,11 +12,7 @@
 
 -(id)init
 {
-    self = [super init];
-    if(self != nil) {
-        NSLog(@"This is init method");
-        _score = 5000;
-    }
+    self = [self initWithInteger:5000];
     return self;
 }
 

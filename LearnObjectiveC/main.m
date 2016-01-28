@@ -14,6 +14,9 @@ int main(int argc, const char * argv[]) {
 
         Player *player = [[Player alloc] init];
         NSLog(@"Score is %i", [player score]);
+        
+        Player *secondPlayer = [[Player alloc] initWithInteger:7000];
+        NSLog(@"Second Player Score is %i", [secondPlayer score]);
     }
     return 0;
 }
